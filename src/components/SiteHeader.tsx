@@ -5,6 +5,7 @@ import { Button } from "@/components/Button";
 
 const nav = [
   { href: "/products", label: "Products" },
+  { href: "/subscribe", label: "Subscribe" },
   { href: "/our-story", label: "Our Story" },
   { href: "/cafe-partners", label: "Café Partners" },
   { href: "/faq", label: "FAQ" },

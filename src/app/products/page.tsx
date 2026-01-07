@@ -145,6 +145,29 @@ export default function ProductsPage() {
             </div>
           </div>
         </div>
+
+        <div className="mt-10 overflow-hidden rounded-[22px] border border-black/10 bg-white">
+          <div className="flex flex-col gap-6 p-8 md:flex-row md:items-center md:justify-between">
+            <div className="max-w-2xl">
+              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-foreground/70">
+                Subscriptions
+              </p>
+              <p className="mt-2 font-[var(--font-display)] text-2xl tracking-tight">
+                Weekly or monthly delivery — mix &amp; match.
+              </p>
+              <p className="mt-3 text-base leading-7 text-foreground/80 sm:text-sm sm:leading-6 sm:text-foreground/70">
+                Build a box from any flavors, keep à la carte ordering, and add a
+                custom bar recipe if you want.
+              </p>
+            </div>
+            <div className="flex items-center gap-3">
+              <Button href="/subscribe">Build a subscription</Button>
+              <Button href="/subscribe" variant="secondary">
+                À la carte
+              </Button>
+            </div>
+          </div>
+        </div>
       </Container>
     </div>
   );
