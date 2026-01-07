@@ -7,16 +7,8 @@ export default function Home() {
     <div className="bg-background">
       {/* Honest-style hero: image-led with a clean overlay */}
       <Container className="py-8 sm:py-10">
-        <div className="relative overflow-hidden rounded-[28px] border border-black/10 bg-jjb-surface">
-          <Image
-            src="/illustrations/hero-family.svg"
-            alt="A warm, family-led hero scene (illustration)"
-            width={1600}
-            height={1000}
-            className="h-auto w-full"
-            priority
-          />
-          <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.92),rgba(255,255,255,0.78),rgba(255,255,255,0.10))] md:bg-[linear-gradient(90deg,rgba(255,255,255,0.92),rgba(255,255,255,0.62),rgba(255,255,255,0.05))]" />
+        <div className="relative min-h-[440px] overflow-hidden rounded-[28px] border border-black/10 bg-jjb-surface bg-[url('/images/Jogibaringredient.svg')] bg-cover bg-center bg-no-repeat sm:min-h-[520px]">
+          <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.96),rgba(255,255,255,0.84),rgba(255,255,255,0.18))] md:bg-[linear-gradient(90deg,rgba(255,255,255,0.94),rgba(255,255,255,0.72),rgba(255,255,255,0.10))]" />
 
           <div className="absolute inset-0 flex items-center">
             <div className="pointer-events-auto w-full p-7 sm:p-10 md:max-w-xl">
