@@ -1,0 +1,42 @@
+import Link from "next/link";
+import { BrandMark } from "@/components/BrandMark";
+import { Container } from "@/components/Container";
+import { Button } from "@/components/Button";
+
+const nav = [
+  { href: "/products", label: "Products" },
+  { href: "/our-story", label: "Our Story" },
+  { href: "/cafe-partners", label: "Café Partners" },
+  { href: "/faq", label: "FAQ" },
+];
+
+export function SiteHeader() {
+  return (
+    <header className="sticky top-0 z-50 border-b border-black/5 bg-background/80 backdrop-blur">
+      <Container className="flex items-center justify-between py-4">
+        <BrandMark />
+
+        <nav className="hidden items-center gap-6 text-sm font-semibold text-foreground/80 md:flex">
+          {nav.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="hover:text-foreground"
+            >
+              {item.label}
+            </Link>
+          ))}
+        </nav>
+
+        <div className="flex items-center gap-3">
+          <Button href="/contact" variant="secondary" className="hidden sm:flex">
+            Contact
+          </Button>
+          <Button href="/products">Shop flavors</Button>
+        </div>
+      </Container>
+    </header>
+  );
+}
+
+

@@ -1,26 +1,71 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Brand neutrals */
+  --background: #fff7e6; /* warm cream */
+  --foreground: #1b1b1b; /* friendly ink */
 }
 
 @theme inline {
+  /* Base tokens */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-sans);
+  --font-display: var(--font-display);
+
+  /* Jogi Jam Bars palette */
+  --color-jjb-sun: #f6c343; /* sunny yellow */
+  --color-jjb-berry: #d81b60; /* berry magenta */
+  --color-jjb-leaf: #2e7d32; /* leafy green */
+  --color-jjb-date: #7a4a2a; /* date brown */
+  --color-jjb-cream: #fff7e6; /* cream */
+  --color-jjb-sky: #38bdf8; /* playful accent */
+
+  /* UI */
+  --radius-jjb: 1.25rem;
+  --shadow-jjb: 0 12px 30px rgba(27, 27, 27, 0.10);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0b0b0c;
+    --foreground: #f5f5f5;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), ui-sans-serif, system-ui, -apple-system,
+    Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/* Nicer text rendering + motion */
+html {
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--color-jjb-berry) 25%, transparent);
+}
+
+.jjb-card {
+  border-radius: var(--radius-jjb);
+  box-shadow: var(--shadow-jjb);
+}
+
+/* Subtle modern motion */
+@media (prefers-reduced-motion: no-preference) {
+  .jjb-float {
+    animation: jjb-float 7s ease-in-out infinite;
+  }
+  @keyframes jjb-float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
 }

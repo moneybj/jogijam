@@ -1,0 +1,60 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="160" y1="120" x2="1040" y2="780" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6C343" stop-opacity="0.55"/>
+      <stop offset="0.45" stop-color="#38BDF8" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#D81B60" stop-opacity="0.25"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="1200" height="900" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#1B1B1B" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect x="60" y="60" width="1080" height="780" rx="72" fill="url(#bg)"/>
+
+  <!-- confetti dots -->
+  <g opacity="0.8">
+    <circle cx="210" cy="210" r="10" fill="#D81B60"/>
+    <circle cx="990" cy="210" r="10" fill="#2E7D32"/>
+    <circle cx="920" cy="700" r="10" fill="#D81B60"/>
+    <circle cx="260" cy="690" r="10" fill="#2E7D32"/>
+    <circle cx="560" cy="160" r="8" fill="#7A4A2A"/>
+    <circle cx="660" cy="760" r="8" fill="#7A4A2A"/>
+  </g>
+
+  <!-- Elephant -->
+  <g filter="url(#shadow)">
+    <path d="M370 560C370 424 473 320 608 320C744 320 847 424 847 560V606C847 654 808 693 760 693H457C409 693 370 654 370 606V560Z" fill="#FFF7E6" fill-opacity="0.85"/>
+    <path d="M446 512C446 439 505 380 578 380H640C713 380 772 439 772 512V560C772 609 732 649 683 649H535C486 649 446 609 446 560V512Z" fill="#FFFFFF" fill-opacity="0.9"/>
+
+    <!-- ears -->
+    <path d="M470 470C430 475 398 508 398 549C398 595 436 632 482 632C507 632 529 621 544 603C526 590 514 569 514 545C514 517 527 491 548 474C531 466 503 466 470 470Z" fill="#F6C343" fill-opacity="0.75"/>
+    <path d="M750 470C790 475 822 508 822 549C822 595 784 632 738 632C713 632 691 621 676 603C694 590 706 569 706 545C706 517 693 491 672 474C689 466 717 466 750 470Z" fill="#F6C343" fill-opacity="0.75"/>
+
+    <!-- face outline -->
+    <path d="M520 472C520 433 552 401 591 401H625C664 401 696 433 696 472V548C696 594 659 631 613 631H603C557 631 520 594 520 548V472Z" stroke="#1B1B1B" stroke-opacity="0.75" stroke-width="10" stroke-linecap="round"/>
+
+    <!-- eyes -->
+    <circle cx="575" cy="495" r="10" fill="#1B1B1B" fill-opacity="0.85"/>
+    <circle cx="645" cy="495" r="10" fill="#1B1B1B" fill-opacity="0.85"/>
+    <circle cx="570" cy="490" r="3" fill="#FFF7E6"/>
+    <circle cx="640" cy="490" r="3" fill="#FFF7E6"/>
+
+    <!-- smile -->
+    <path d="M575 560C595 585 625 588 649 568" stroke="#D81B60" stroke-width="10" stroke-linecap="round"/>
+
+    <!-- trunk -->
+    <path d="M612 575C640 595 648 624 630 644C611 666 576 660 558 634" stroke="#1B1B1B" stroke-opacity="0.75" stroke-width="10" stroke-linecap="round"/>
+    <path d="M612 582C632 596 638 617 624 632C609 648 584 645 571 625" stroke="#38BDF8" stroke-opacity="0.55" stroke-width="12" stroke-linecap="round"/>
+  </g>
+
+  <!-- tiny fruit doodles -->
+  <g opacity="0.9">
+    <path d="M914 430C940 412 970 410 994 430C1020 452 1020 490 994 512C970 532 940 530 914 512C888 490 888 452 914 430Z" fill="#D81B60" fill-opacity="0.85"/>
+    <path d="M980 418C984 404 995 395 1008 392" stroke="#2E7D32" stroke-width="8" stroke-linecap="round"/>
+    <path d="M270 440C297 424 330 426 352 448C377 472 372 509 346 530C322 550 290 548 270 526C250 504 246 468 270 440Z" fill="#2E7D32" fill-opacity="0.22" stroke="#2E7D32" stroke-opacity="0.6" stroke-width="8"/>
+    <path d="M305 430C306 415 315 401 330 394" stroke="#7A4A2A" stroke-width="8" stroke-linecap="round"/>
+  </g>
+</svg>
+
+
