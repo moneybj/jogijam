@@ -4,189 +4,121 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="bg-[radial-gradient(1200px_500px_at_20%_0%,rgba(246,195,67,0.35),transparent),radial-gradient(900px_400px_at_85%_10%,rgba(216,27,96,0.22),transparent)]">
-      <Container className="py-14 sm:py-18">
-        <div className="grid items-center gap-10 lg:grid-cols-2">
-          <div>
-            <p className="inline-flex items-center gap-2 rounded-full bg-white/70 px-4 py-2 text-sm font-semibold text-foreground/80 ring-1 ring-black/5">
-              Organic • Date‑based • Ayurveda‑inspired
-            </p>
-            <h1 className="mt-5 font-[var(--font-display)] text-4xl leading-[1.05] tracking-tight text-foreground sm:text-6xl">
-              Jam‑packed with joy.
-              <span className="text-jjb-berry"> Built from whole foods.</span>
-            </h1>
-            <p className="mt-5 max-w-xl text-lg leading-8 text-foreground/90 sm:text-foreground/75">
-              Jogi Jam Bars are playfully nourishing snack bars made with dates,
-              nuts, fruits, and gentle spices — the sweet, chewy treat kids love
-              and parents trust.
-            </p>
+    <div className="bg-background">
+      {/* Honest-style hero: image-led with a clean overlay */}
+      <Container className="py-8 sm:py-10">
+        <div className="relative overflow-hidden rounded-[28px] border border-black/10 bg-jjb-surface">
+          <Image
+            src="/illustrations/hero-family.svg"
+            alt="A warm, family-led hero scene (illustration)"
+            width={1600}
+            height={1000}
+            className="h-auto w-full"
+            priority
+          />
+          <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.92),rgba(255,255,255,0.78),rgba(255,255,255,0.10))] md:bg-[linear-gradient(90deg,rgba(255,255,255,0.92),rgba(255,255,255,0.62),rgba(255,255,255,0.05))]" />
 
-            <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-              <Button href="/products">Explore flavors</Button>
-              <Button href="/our-story" variant="secondary">
-                Meet Jogi
-              </Button>
-            </div>
-
-            <p className="mt-6 text-sm text-foreground/75 sm:text-foreground/60">
-              No heavy health lectures. Just real ingredients, made with love.
-            </p>
-          </div>
-
-          <div className="jjb-card relative overflow-hidden bg-white/70 ring-1 ring-black/5">
-            <div className="absolute inset-0 bg-[radial-gradient(700px_260px_at_30%_10%,rgba(46,125,50,0.18),transparent),radial-gradient(650px_300px_at_80%_20%,rgba(56,189,248,0.18),transparent)]" />
-            <div className="relative p-8 sm:p-10">
-              <div className="flex items-start justify-between gap-6">
-                <div>
-                  <p className="font-[var(--font-display)] text-2xl tracking-tight">
-                    What’s inside?
-                  </p>
-                  <p className="mt-2 text-base leading-7 text-foreground/85 sm:text-sm sm:leading-6 sm:text-foreground/70">
-                    A short list you can pronounce — like dates, nuts/seeds,
-                    fruit, and cozy spices.
-                  </p>
-                </div>
-                <span className="rounded-full bg-jjb-sun px-3 py-1 text-xs font-bold text-jjb-date">
-                  Whole‑food sweet
-                </span>
-              </div>
-
-              <div className="mt-7 overflow-hidden rounded-3xl bg-white/70 ring-1 ring-black/5">
-                <Image
-                  src="/illustrations/ingredients-doodles.svg"
-                  alt="Playful doodles of dates, nuts, fruits, and spices"
-                  width={1200}
-                  height={360}
-                  className="h-auto w-full"
-                  priority
-                />
-              </div>
-
-              <div className="mt-7 grid gap-4 sm:grid-cols-2">
-                <div className="rounded-2xl bg-white/70 p-5 ring-1 ring-black/5">
-                  <p className="font-semibold">Kids say “YUM.”</p>
-                  <p className="mt-1 text-base text-foreground/85 sm:text-sm sm:text-foreground/70">
-                    Familiar flavors, fun names, lunchbox‑friendly.
-                  </p>
-                </div>
-                <div className="rounded-2xl bg-white/70 p-5 ring-1 ring-black/5">
-                  <p className="font-semibold">Parents say “YES.”</p>
-                  <p className="mt-1 text-base text-foreground/85 sm:text-sm sm:text-foreground/70">
-                    Organic ingredients, clear labeling, no hype.
-                  </p>
-                </div>
-                <div className="rounded-2xl bg-white/70 p-5 ring-1 ring-black/5">
-                  <p className="font-semibold">Ayurveda‑inspired.</p>
-                  <p className="mt-1 text-base text-foreground/85 sm:text-sm sm:text-foreground/70">
-                    Gentle spices like cardamom, cinnamon, turmeric.
-                  </p>
-                </div>
-                <div className="rounded-2xl bg-white/70 p-5 ring-1 ring-black/5">
-                  <p className="font-semibold">Made for togetherness.</p>
-                  <p className="mt-1 text-base text-foreground/85 sm:text-sm sm:text-foreground/70">
-                    A snack that makes family moments easier (and happier).
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </Container>
-
-      <Container className="pb-16 sm:pb-20">
-        <div className="jjb-card overflow-hidden bg-white/70 ring-1 ring-black/5">
-          <div className="grid gap-8 p-8 sm:p-10 lg:grid-cols-2 lg:gap-10">
-            <div>
-              <p className="font-[var(--font-display)] text-3xl tracking-tight">
-                Two lines, one family vibe.
+          <div className="absolute inset-0 flex items-center">
+            <div className="pointer-events-auto w-full p-7 sm:p-10 md:max-w-xl">
+              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-foreground/70">
+                Organic • Date-based • Ayurveda-inspired
               </p>
-              <p className="mt-3 text-foreground/85 sm:text-foreground/75">
-                Kid‑friendly favorites for little adventurers, plus bolder,
-                spice‑kissed bars for grown‑ups (and hungry teens).
+              <h1 className="mt-3 font-[var(--font-display)] text-4xl tracking-tight sm:text-5xl">
+                Protecting snack time’s happy place.
+              </h1>
+              <p className="mt-4 text-base leading-7 text-foreground/80 sm:text-lg sm:leading-8">
+                Whole-food bars made from dates, fruits, nuts/seeds, and gentle
+                spices — made to taste like a treat and feel like a good choice.
               </p>
-              <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-                <Button href="/products">See all products</Button>
-                <Button href="/cafe-partners" variant="secondary">
-                  For cafés &amp; shops
+              <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+                <Button href="/products">Shop now</Button>
+                <Button href="/our-story" variant="secondary">
+                  Learn more
                 </Button>
               </div>
             </div>
-
-            <div className="grid gap-4 sm:grid-cols-2">
-              <div className="rounded-3xl bg-[linear-gradient(135deg,rgba(246,195,67,0.35),rgba(56,189,248,0.18))] p-6 ring-1 ring-black/5">
-                <p className="font-[var(--font-display)] text-xl">Kids Line</p>
-                <p className="mt-2 text-base text-foreground/85 sm:text-sm sm:text-foreground/70">
-                  Smaller, playful, lunchbox‑ready.
-                </p>
-                <div className="mt-4 overflow-hidden rounded-2xl bg-white/70 ring-1 ring-black/5">
-                  <Image
-                    src="/illustrations/wrapper-kids.svg"
-                    alt="Playful kids line wrapper mockup"
-                    width={960}
-                    height={640}
-                    className="h-auto w-full"
-                  />
-                </div>
-                <ul className="mt-4 space-y-2 text-sm text-foreground/80">
-                  <li>Strawberry Jammin’</li>
-                  <li>Cocoa Loco</li>
-                  <li>Mighty Mango</li>
-                  <li>Banana Monkey Madness</li>
-                </ul>
-              </div>
-              <div className="rounded-3xl bg-[linear-gradient(135deg,rgba(46,125,50,0.20),rgba(216,27,96,0.18))] p-6 ring-1 ring-black/5">
-                <p className="font-[var(--font-display)] text-xl">Family Line</p>
-                <p className="mt-2 text-base text-foreground/85 sm:text-sm sm:text-foreground/70">
-                  Heartier bars with grown‑up flavor twists.
-                </p>
-                <div className="mt-4 overflow-hidden rounded-2xl bg-white/70 ring-1 ring-black/5">
-                  <Image
-                    src="/illustrations/wrapper-family.svg"
-                    alt="Modern family line wrapper mockup"
-                    width={960}
-                    height={640}
-                    className="h-auto w-full"
-                  />
-                </div>
-                <ul className="mt-4 space-y-2 text-sm text-foreground/80">
-                  <li>Golden Chai Bliss</li>
-                  <li>Mocha Morning</li>
-                  <li>Cardamom Crunch</li>
-                  <li>Fig &amp; Walnut Fiesta</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
-          <div className="jjb-card bg-white/70 p-7 ring-1 ring-black/5">
-            <p className="font-[var(--font-display)] text-xl">Real ingredients</p>
-            <p className="mt-2 text-base leading-7 text-foreground/85 sm:text-sm sm:leading-6 sm:text-foreground/70">
-              Dates for natural sweetness, plus nuts/seeds, fruits, and gentle
-              spices. Nothing “weird.”
-            </p>
-          </div>
-          <div className="jjb-card bg-white/70 p-7 ring-1 ring-black/5">
-            <p className="font-[var(--font-display)] text-xl">
-              Playfully trustworthy
-            </p>
-            <p className="mt-2 text-base leading-7 text-foreground/85 sm:text-sm sm:leading-6 sm:text-foreground/70">
-              Bright, joyful branding — backed by transparent, parent‑friendly
-              labeling.
-            </p>
-          </div>
-          <div className="jjb-card bg-white/70 p-7 ring-1 ring-black/5">
-            <p className="font-[var(--font-display)] text-xl">
-              Inspired by Ayurveda
-            </p>
-            <p className="mt-2 text-base leading-7 text-foreground/85 sm:text-sm sm:leading-6 sm:text-foreground/70">
-              Ancient wisdom, modern snacks. We keep it light, inclusive, and
-              delicious.
-            </p>
           </div>
         </div>
       </Container>
+
+      {/* Honest-like product grid section */}
+      <Container className="py-10">
+        <div className="flex items-end justify-between gap-6">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.14em] text-foreground/70">
+              Best sellers
+            </p>
+            <p className="mt-2 font-[var(--font-display)] text-2xl tracking-tight">
+              Family favorites, date-sweetened.
+            </p>
+          </div>
+          <Button href="/products" variant="secondary" className="hidden sm:flex">
+            Shop all
+          </Button>
+        </div>
+
+        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {[
+            { title: "Strawberry Jammin’", img: "/illustrations/wrapper-kids.svg" },
+            { title: "Cocoa Loco", img: "/illustrations/wrapper-kids.svg" },
+            { title: "Golden Chai Bliss", img: "/illustrations/wrapper-family.svg" },
+            { title: "Mocha Morning", img: "/illustrations/wrapper-family.svg" },
+          ].map((p) => (
+            <div
+              key={p.title}
+              className="overflow-hidden rounded-[22px] border border-black/10 bg-white"
+            >
+              <div className="bg-jjb-surface p-4">
+                <Image
+                  src={p.img}
+                  alt={p.title}
+                  width={960}
+                  height={640}
+                  className="h-auto w-full"
+                />
+              </div>
+              <div className="p-4">
+                <p className="text-sm font-semibold">{p.title}</p>
+                <p className="mt-1 text-xs uppercase tracking-[0.14em] text-foreground/60">
+                  Date-sweetened • Whole foods
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </Container>
+
+      {/* Honest-like standard band */}
+      <div className="border-y border-black/10 bg-jjb-surface">
+        <Container className="py-10">
+          <p className="text-xs font-semibold uppercase tracking-[0.14em] text-foreground/70">
+            The Jogi standard
+          </p>
+          <div className="mt-3 grid gap-6 md:grid-cols-4">
+            <div className="md:col-span-2">
+              <p className="font-[var(--font-display)] text-2xl tracking-tight">
+                Transparent ingredients. Thoughtful joy.
+              </p>
+              <p className="mt-3 text-base leading-7 text-foreground/80">
+                We keep it honest and family-friendly: clear ingredient callouts,
+                playful flavors, and no exaggerated health claims.
+              </p>
+            </div>
+            {[
+              "Whole-food formulas",
+              "Kids + parents approved",
+              "Ayurveda-inspired flavors",
+            ].map((t) => (
+              <div key={t} className="rounded-[18px] border border-black/10 bg-white p-5">
+                <p className="text-sm font-semibold">{t}</p>
+                <p className="mt-2 text-sm text-foreground/70">
+                  Built for everyday snack moments.
+                </p>
+              </div>
+            ))}
+          </div>
+        </Container>
+      </div>
     </div>
   );
 }

@@ -19,7 +19,7 @@ export function BrandMark({
       aria-label="Jogi Jam Bars home"
     >
       <span
-        className="grid size-11 place-items-center rounded-2xl bg-jjb-sun text-jjb-date shadow-[0_10px_22px_rgba(27,27,27,0.12)]"
+        className="grid size-11 place-items-center rounded-2xl bg-white text-foreground ring-1 ring-black/15"
         aria-hidden="true"
       >
         {/* Simple mascot mark (baby elephant trunk) */}
@@ -47,11 +47,11 @@ export function BrandMark({
       </span>
 
       <span className="leading-none">
-        <span className="block font-[var(--font-display)] text-xl tracking-tight text-foreground">
+        <span className="block font-[var(--font-display)] text-lg tracking-tight text-foreground">
           Jogi Jam Bars
         </span>
         {withTagline ? (
-          <span className="mt-1 block text-sm text-foreground/70">
+          <span className="mt-1 block text-xs uppercase tracking-[0.14em] text-foreground/60">
             Jam‑packed with joy &amp; goodness.
           </span>
         ) : null}

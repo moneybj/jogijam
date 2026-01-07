@@ -11,8 +11,8 @@ export const metadata: Metadata = {
 
 export default function CafePartnersPage() {
   return (
-    <div className="bg-[radial-gradient(1000px_420px_at_20%_0%,rgba(56,189,248,0.18),transparent),radial-gradient(900px_420px_at_90%_5%,rgba(246,195,67,0.22),transparent)]">
-      <Container className="py-14 sm:py-18">
+    <div className="bg-background">
+      <Container className="py-12 sm:py-16">
         <PageHeading
           eyebrow="Café Partners"
           title="A perfect grab‑and‑go snack next to the espresso machine."
@@ -20,7 +20,7 @@ export default function CafePartnersPage() {
         />
 
         <div className="mt-12 grid gap-6 lg:grid-cols-3">
-          <div className="jjb-card bg-white/70 p-7 ring-1 ring-black/5 lg:col-span-2">
+          <div className="rounded-[22px] border border-black/10 bg-white p-7 lg:col-span-2">
             <p className="font-[var(--font-display)] text-2xl tracking-tight">
               How we show up in your shop
             </p>
@@ -52,7 +52,7 @@ export default function CafePartnersPage() {
             </ul>
           </div>
 
-          <div className="jjb-card bg-white/70 p-7 ring-1 ring-black/5">
+          <div className="rounded-[22px] border border-black/10 bg-white p-7">
             <p className="font-[var(--font-display)] text-2xl tracking-tight">
               Quick pitch
             </p>
@@ -69,7 +69,7 @@ export default function CafePartnersPage() {
           </div>
         </div>
 
-        <div className="mt-10 jjb-card bg-white/70 p-8 ring-1 ring-black/5">
+        <div className="mt-10 rounded-[22px] border border-black/10 bg-jjb-surface p-8">
           <p className="font-[var(--font-display)] text-2xl tracking-tight">
             Want a co-branded promo?
           </p>

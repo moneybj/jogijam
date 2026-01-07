@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
-import { Fredoka, Nunito } from "next/font/google";
+import { Inter, Manrope } from "next/font/google";
 import "./globals.css";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import type { ReactNode } from "react";
 
-const nunito = Nunito({
+const inter = Inter({
   variable: "--font-sans",
   subsets: ["latin"],
 });
 
-const fredoka = Fredoka({
+const manrope = Manrope({
   variable: "--font-display",
   subsets: ["latin"],
 });
@@ -39,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${nunito.variable} ${fredoka.variable} antialiased`}
+        className={`${inter.variable} ${manrope.variable} antialiased`}
       >
         <div className="min-h-dvh">
           <SiteHeader />

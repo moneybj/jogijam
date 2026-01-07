@@ -11,8 +11,8 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <div className="bg-[radial-gradient(900px_420px_at_20%_0%,rgba(246,195,67,0.25),transparent),radial-gradient(900px_420px_at_85%_5%,rgba(56,189,248,0.16),transparent)]">
-      <Container className="py-14 sm:py-18">
+    <div className="bg-background">
+      <Container className="py-12 sm:py-16">
         <PageHeading
           eyebrow="Contact"
           title="Let’s make snack time happier."
@@ -20,7 +20,7 @@ export default function ContactPage() {
         />
 
         <div className="mt-12 grid gap-6 lg:grid-cols-3">
-          <div className="jjb-card bg-white/70 p-7 ring-1 ring-black/5 lg:col-span-2">
+          <div className="rounded-[22px] border border-black/10 bg-white p-7 lg:col-span-2">
             <p className="font-[var(--font-display)] text-2xl tracking-tight">
               Email us
             </p>
@@ -29,15 +29,17 @@ export default function ContactPage() {
             </p>
             <p className="mt-4">
               <a
-                className="text-lg font-semibold text-jjb-berry hover:underline"
+                className="text-lg font-semibold text-foreground hover:underline"
                 href="mailto:hello@jogijambars.com"
               >
                 hello@jogijambars.com
               </a>
             </p>
 
-            <div className="mt-8 rounded-3xl bg-white/70 p-6 ring-1 ring-black/5">
-              <p className="font-semibold">Wholesale / cafés</p>
+            <div className="mt-8 rounded-[18px] border border-black/10 bg-jjb-surface p-6">
+              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-foreground/70">
+                Wholesale / cafés
+              </p>
               <p className="mt-1 text-base leading-7 text-foreground/85 sm:text-sm sm:leading-6 sm:text-foreground/70">
                 Include your shop name, location, and approximate weekly volume.
                 We’ll follow up with next steps.
@@ -50,7 +52,7 @@ export default function ContactPage() {
             </div>
           </div>
 
-          <div className="jjb-card bg-white/70 p-7 ring-1 ring-black/5">
+          <div className="rounded-[22px] border border-black/10 bg-white p-7">
             <p className="font-[var(--font-display)] text-2xl tracking-tight">
               “Jam” updates
             </p>
@@ -63,12 +65,12 @@ export default function ContactPage() {
                 <input
                   type="email"
                   placeholder="you@example.com"
-                  className="mt-2 w-full rounded-2xl bg-white/80 px-4 py-3 text-sm ring-1 ring-black/10 focus:outline-none focus:ring-2 focus:ring-jjb-berry/30"
+                  className="mt-2 w-full rounded bg-white px-4 py-3 text-sm ring-1 ring-black/15 focus:outline-none focus:ring-2 focus:ring-black/25"
                 />
               </label>
               <button
                 type="button"
-                className="w-full rounded-full bg-jjb-leaf px-5 py-3 text-sm font-semibold text-white hover:bg-jjb-leaf/90"
+                className="w-full rounded bg-foreground px-5 py-3 text-xs font-semibold uppercase tracking-[0.14em] text-background hover:bg-foreground/90"
               >
                 Join the Jam (coming soon)
               </button>

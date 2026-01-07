@@ -2,8 +2,8 @@
 
 :root {
   /* Brand neutrals */
-  --background: #fff7e6; /* warm cream */
-  --foreground: #1b1b1b; /* friendly ink */
+  --background: #ffffff; /* Honest-like: clean white */
+  --foreground: #111111; /* crisp charcoal */
 }
 
 @theme inline {
@@ -13,17 +13,19 @@
   --font-sans: var(--font-sans);
   --font-display: var(--font-display);
 
-  /* Jogi Jam Bars palette */
-  --color-jjb-sun: #f6c343; /* sunny yellow */
-  --color-jjb-berry: #d81b60; /* berry magenta */
-  --color-jjb-leaf: #2e7d32; /* leafy green */
-  --color-jjb-date: #7a4a2a; /* date brown */
-  --color-jjb-cream: #fff7e6; /* cream */
-  --color-jjb-sky: #38bdf8; /* playful accent */
+  /* Honest-ish surfaces */
+  --color-jjb-surface: #f6f2ed; /* warm oatmeal */
+  --color-jjb-surface-2: #eef3ef; /* whisper sage */
+  --color-jjb-border: rgba(17, 17, 17, 0.12);
+  --color-jjb-muted: rgba(17, 17, 17, 0.68);
+
+  /* Jogi accents (kept subtle) */
+  --color-jjb-accent: #111111; /* default CTA like Honest */
+  --color-jjb-accent-2: #c46a3a; /* date-caramel (subtle) */
 
   /* UI */
-  --radius-jjb: 1.25rem;
-  --shadow-jjb: 0 12px 30px rgba(27, 27, 27, 0.10);
+  --radius-jjb: 1.1rem;
+  --shadow-jjb: 0 10px 26px rgba(17, 17, 17, 0.08);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -48,12 +50,16 @@ html {
 }
 
 ::selection {
-  background: color-mix(in srgb, var(--color-jjb-berry) 25%, transparent);
+  background: color-mix(in srgb, var(--color-foreground) 18%, transparent);
 }
 
 .jjb-card {
   border-radius: var(--radius-jjb);
   box-shadow: var(--shadow-jjb);
+}
+
+.jjb-surface {
+  background: var(--color-jjb-surface);
 }
 
 /* Subtle modern motion */

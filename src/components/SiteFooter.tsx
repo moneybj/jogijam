@@ -4,7 +4,7 @@ import { Container } from "@/components/Container";
 
 export function SiteFooter() {
   return (
-    <footer className="border-t border-black/5 bg-white/40">
+    <footer className="border-t border-black/10 bg-jjb-surface">
       <Container className="py-12">
         <div className="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
           <div className="max-w-sm">
@@ -17,8 +17,10 @@ export function SiteFooter() {
 
           <div className="grid grid-cols-2 gap-8 text-sm md:grid-cols-3">
             <div className="space-y-3">
-              <p className="font-[var(--font-display)] text-base">Explore</p>
-              <ul className="space-y-2 text-foreground/75">
+              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-foreground/70">
+                Explore
+              </p>
+              <ul className="space-y-2 text-sm text-foreground/70">
                 <li>
                   <Link href="/products" className="hover:text-foreground">
                     Products
@@ -37,8 +39,10 @@ export function SiteFooter() {
               </ul>
             </div>
             <div className="space-y-3">
-              <p className="font-[var(--font-display)] text-base">Support</p>
-              <ul className="space-y-2 text-foreground/75">
+              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-foreground/70">
+                Support
+              </p>
+              <ul className="space-y-2 text-sm text-foreground/70">
                 <li>
                   <Link href="/faq" className="hover:text-foreground">
                     FAQ
@@ -52,8 +56,10 @@ export function SiteFooter() {
               </ul>
             </div>
             <div className="space-y-3">
-              <p className="font-[var(--font-display)] text-base">Say hi</p>
-              <ul className="space-y-2 text-foreground/75">
+              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-foreground/70">
+                Say hi
+              </p>
+              <ul className="space-y-2 text-sm text-foreground/70">
                 <li>
                   <a
                     href="mailto:hello@jogijambars.com"
@@ -70,9 +76,9 @@ export function SiteFooter() {
           </div>
         </div>
 
-        <div className="mt-10 flex flex-col gap-2 border-t border-black/5 pt-6 text-xs text-foreground/60 md:flex-row md:items-center md:justify-between">
+        <div className="mt-10 flex flex-col gap-2 border-t border-black/10 pt-6 text-xs text-foreground/60 md:flex-row md:items-center md:justify-between">
           <p>© {new Date().getFullYear()} Jogi Jam Bars. All rights reserved.</p>
-          <p>Made with whole foods, bright colors, and good vibes.</p>
+          <p>Made with whole foods — designed with care.</p>
         </div>
       </Container>
     </footer>

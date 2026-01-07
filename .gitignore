@@ -39,6 +39,10 @@ yarn-error.log*
 # vercel
 .vercel
 
+# brand references / local renders
+/Brand/*.pdf
+/.tmp_pdf/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

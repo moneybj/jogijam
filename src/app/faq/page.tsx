@@ -37,8 +37,8 @@ const faqs = [
 
 export default function FaqPage() {
   return (
-    <div className="bg-[radial-gradient(900px_420px_at_25%_0%,rgba(46,125,50,0.15),transparent),radial-gradient(900px_420px_at_85%_5%,rgba(216,27,96,0.16),transparent)]">
-      <Container className="py-14 sm:py-18">
+    <div className="bg-background">
+      <Container className="py-12 sm:py-16">
         <PageHeading
           eyebrow="FAQ"
           title="Questions? We’ve got you."
@@ -49,7 +49,7 @@ export default function FaqPage() {
           {faqs.map((f) => (
             <details
               key={f.q}
-              className="jjb-card group bg-white/70 p-6 ring-1 ring-black/5 open:bg-white"
+              className="group rounded-[22px] border border-black/10 bg-white p-6 open:bg-white"
             >
               <summary className="cursor-pointer list-none font-semibold">
                 <span className="flex items-center justify-between gap-4">

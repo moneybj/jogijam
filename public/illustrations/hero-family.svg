@@ -1,0 +1,57 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="wash" x1="0" y1="0" x2="1600" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6F2ED"/>
+      <stop offset="0.55" stop-color="#F2EEE8"/>
+      <stop offset="1" stop-color="#ECE7E0"/>
+    </linearGradient>
+    <linearGradient id="warm" x1="260" y1="220" x2="1180" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E6D7C7" stop-opacity="0.9"/>
+      <stop offset="0.6" stop-color="#D9C7B5" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#C9B39F" stop-opacity="0.35"/>
+    </linearGradient>
+    <filter id="softShadow" x="0" y="0" width="1600" height="1000" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#111111" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <!-- neutral "photo-like" hero art (original, not from Honest) -->
+  <rect width="1600" height="1000" rx="56" fill="url(#wash)"/>
+
+  <!-- subtle film grain dots -->
+  <g opacity="0.12">
+    <circle cx="240" cy="210" r="2" fill="#111111"/>
+    <circle cx="320" cy="330" r="2" fill="#111111"/>
+    <circle cx="520" cy="190" r="2" fill="#111111"/>
+    <circle cx="960" cy="240" r="2" fill="#111111"/>
+    <circle cx="1320" cy="320" r="2" fill="#111111"/>
+    <circle cx="1180" cy="180" r="2" fill="#111111"/>
+    <circle cx="420" cy="520" r="2" fill="#111111"/>
+    <circle cx="760" cy="640" r="2" fill="#111111"/>
+    <circle cx="1240" cy="700" r="2" fill="#111111"/>
+    <circle cx="980" cy="820" r="2" fill="#111111"/>
+  </g>
+
+  <!-- soft background shapes -->
+  <path d="M210 740C410 910 720 970 1010 910C1290 852 1460 690 1500 520C1540 350 1450 210 1250 160C1030 105 860 230 700 260C520 295 360 340 260 430C160 520 70 640 210 740Z" fill="url(#warm)"/>
+
+  <!-- family silhouette blobs -->
+  <g filter="url(#softShadow)">
+    <path d="M520 760C520 650 612 560 726 560H790C904 560 996 650 996 760V820C996 866 958 904 912 904H604C558 904 520 866 520 820V760Z" fill="#FFFFFF" fill-opacity="0.62"/>
+    <path d="M690 560C650 530 624 484 624 432C624 340 700 264 792 264C884 264 960 340 960 432C960 485 934 532 894 562" fill="#FFFFFF" fill-opacity="0.40"/>
+    <path d="M700 460C700 420 732 388 772 388H808C848 388 880 420 880 460V522C880 558 851 587 815 587H765C729 587 700 558 700 522V460Z" fill="#FFFFFF" fill-opacity="0.74"/>
+  </g>
+
+  <!-- small playful nods (still very minimal) -->
+  <g opacity="0.25">
+    <path d="M1220 260C1244 246 1270 246 1292 262C1314 278 1316 310 1296 330C1276 350 1246 350 1224 332C1200 312 1198 276 1220 260Z" fill="#111111"/>
+    <path d="M1242 248C1240 232 1250 220 1268 214" stroke="#111111" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <!-- caption strip placeholder -->
+  <rect x="96" y="820" width="520" height="92" rx="26" fill="#FFFFFF" fill-opacity="0.55"/>
+  <rect x="126" y="850" width="300" height="10" rx="5" fill="#111111" opacity="0.18"/>
+  <rect x="126" y="872" width="240" height="10" rx="5" fill="#111111" opacity="0.12"/>
+</svg>
+
+

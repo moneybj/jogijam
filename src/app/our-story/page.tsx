@@ -12,8 +12,8 @@ export const metadata: Metadata = {
 
 export default function OurStoryPage() {
   return (
-    <div className="bg-[radial-gradient(1000px_420px_at_20%_0%,rgba(216,27,96,0.18),transparent),radial-gradient(900px_420px_at_90%_5%,rgba(246,195,67,0.25),transparent)]">
-      <Container className="py-14 sm:py-18">
+    <div className="bg-background">
+      <Container className="py-12 sm:py-16">
         <PageHeading
           eyebrow="Our Story"
           title="Made for a little boy named Jogi."
@@ -21,7 +21,7 @@ export default function OurStoryPage() {
         />
 
         <div className="mt-12 grid gap-6 lg:grid-cols-3">
-          <div className="jjb-card bg-white/70 p-7 ring-1 ring-black/5 lg:col-span-2">
+          <div className="rounded-[22px] border border-black/10 bg-white p-7 lg:col-span-2">
             <p className="font-[var(--font-display)] text-2xl tracking-tight">
               Family joy, first.
             </p>
@@ -37,7 +37,7 @@ export default function OurStoryPage() {
             </p>
           </div>
 
-          <div className="jjb-card bg-white/70 p-7 ring-1 ring-black/5">
+          <div className="rounded-[22px] border border-black/10 bg-white p-7">
             <p className="font-[var(--font-display)] text-2xl tracking-tight">
               Playfully nourishing.
             </p>
@@ -48,7 +48,7 @@ export default function OurStoryPage() {
             <p className="mt-4 text-sm text-foreground/75 sm:text-xs sm:text-foreground/60">
               We don’t make medical claims. We just make really good snack bars.
             </p>
-            <div className="mt-6 overflow-hidden rounded-3xl bg-white/70 ring-1 ring-black/5">
+            <div className="mt-6 overflow-hidden rounded-[18px] border border-black/10 bg-jjb-surface">
               <Image
                 src="/illustrations/jogi-elephant.svg"
                 alt="Jogi mascot illustration"
@@ -60,7 +60,7 @@ export default function OurStoryPage() {
           </div>
         </div>
 
-        <div className="mt-10 jjb-card overflow-hidden bg-white/70 ring-1 ring-black/5">
+        <div className="mt-10 overflow-hidden rounded-[22px] border border-black/10 bg-jjb-surface">
           <div className="grid gap-8 p-8 sm:p-10 lg:grid-cols-2 lg:gap-10">
             <div>
               <p className="font-[var(--font-display)] text-3xl tracking-tight">
@@ -87,7 +87,7 @@ export default function OurStoryPage() {
                 </li>
               </ul>
             </div>
-            <div className="rounded-3xl bg-[linear-gradient(135deg,rgba(46,125,50,0.18),rgba(56,189,248,0.12),rgba(246,195,67,0.20))] p-7 ring-1 ring-black/5">
+            <div className="rounded-[18px] border border-black/10 bg-white p-7">
               <p className="font-[var(--font-display)] text-2xl tracking-tight">
                 A tiny “Ayurvedic fun fact”
               </p>

@@ -12,11 +12,11 @@ const nav = [
 
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 z-50 border-b border-black/5 bg-background/80 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-black/10 bg-background/95 backdrop-blur">
       <Container className="flex items-center justify-between py-4">
         <BrandMark />
 
-        <nav className="hidden items-center gap-6 text-sm font-semibold text-foreground/80 md:flex">
+        <nav className="hidden items-center gap-7 text-xs font-semibold uppercase tracking-[0.14em] text-foreground/70 md:flex">
           {nav.map((item) => (
             <Link
               key={item.href}
@@ -32,7 +32,7 @@ export function SiteHeader() {
           <Button href="/contact" variant="secondary" className="hidden sm:flex">
             Contact
           </Button>
-          <Button href="/products">Shop flavors</Button>
+          <Button href="/products">Shop</Button>
         </div>
       </Container>
     </header>

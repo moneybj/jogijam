@@ -12,8 +12,8 @@ export const metadata: Metadata = {
 
 export default function ProductsPage() {
   return (
-    <div className="bg-[radial-gradient(900px_400px_at_15%_0%,rgba(246,195,67,0.30),transparent),radial-gradient(900px_420px_at_85%_5%,rgba(46,125,50,0.18),transparent)]">
-      <Container className="py-14 sm:py-18">
+    <div className="bg-background">
+      <Container className="py-12 sm:py-16">
         <PageHeading
           eyebrow="Products"
           title="Snacks for the whole family."
@@ -21,14 +21,17 @@ export default function ProductsPage() {
         />
 
         <div className="mt-10 grid gap-6 lg:grid-cols-2">
-          <div className="jjb-card bg-white/70 p-8 ring-1 ring-black/5">
-            <p className="inline-flex rounded-full bg-jjb-sun px-3 py-1 text-xs font-bold text-jjb-date">
-              Kids Line
-            </p>
-            <h2 className="mt-4 font-[var(--font-display)] text-2xl tracking-tight">
-              Little bars. Big smiles.
-            </h2>
-            <p className="mt-2 text-base leading-7 text-foreground/85 sm:text-sm sm:leading-6 sm:text-foreground/70">
+          <div className="overflow-hidden rounded-[22px] border border-black/10 bg-white">
+            <div className="border-b border-black/10 bg-jjb-surface px-8 py-6">
+              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-foreground/70">
+                Kids line
+              </p>
+              <h2 className="mt-2 font-[var(--font-display)] text-2xl tracking-tight">
+                Little bars. Big smiles.
+              </h2>
+            </div>
+            <div className="p-8">
+            <p className="text-base leading-7 text-foreground/80 sm:text-sm sm:leading-6 sm:text-foreground/70">
               Smaller portions, familiar flavors, and fun names. Built for
               lunchboxes, after-school, and “one more bite!”
             </p>
@@ -55,7 +58,7 @@ export default function ProductsPage() {
               ].map((f) => (
                 <div
                   key={f.name}
-                  className="rounded-2xl bg-white/70 p-4 ring-1 ring-black/5"
+                  className="rounded-[18px] border border-black/10 bg-white p-4"
                 >
                   <p className="font-semibold">{f.name}</p>
                   <p className="mt-1 text-sm text-foreground/80 sm:text-xs sm:text-foreground/70">
@@ -69,16 +72,20 @@ export default function ProductsPage() {
               Note: final recipes, allergens, and nutrition facts will be listed
               clearly per flavor.
             </p>
+            </div>
           </div>
 
-          <div className="jjb-card bg-white/70 p-8 ring-1 ring-black/5">
-            <p className="inline-flex rounded-full bg-jjb-leaf px-3 py-1 text-xs font-bold text-white">
-              Family Line
-            </p>
-            <h2 className="mt-4 font-[var(--font-display)] text-2xl tracking-tight">
-              A little bolder. Still joyful.
-            </h2>
-            <p className="mt-2 text-base leading-7 text-foreground/85 sm:text-sm sm:leading-6 sm:text-foreground/70">
+          <div className="overflow-hidden rounded-[22px] border border-black/10 bg-white">
+            <div className="border-b border-black/10 bg-jjb-surface px-8 py-6">
+              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-foreground/70">
+                Family line
+              </p>
+              <h2 className="mt-2 font-[var(--font-display)] text-2xl tracking-tight">
+                A little bolder. Still joyful.
+              </h2>
+            </div>
+            <div className="p-8">
+            <p className="text-base leading-7 text-foreground/80 sm:text-sm sm:leading-6 sm:text-foreground/70">
               Heartier bars with adventurous flavor notes — inspired by cozy
               spices and Ayurvedic traditions (in a friendly, no-lectures way).
             </p>
@@ -102,7 +109,7 @@ export default function ProductsPage() {
               ].map((f) => (
                 <div
                   key={f.name}
-                  className="rounded-2xl bg-white/70 p-4 ring-1 ring-black/5"
+                  className="rounded-[18px] border border-black/10 bg-white p-4"
                 >
                   <p className="font-semibold">{f.name}</p>
                   <p className="mt-1 text-sm text-foreground/80 sm:text-xs sm:text-foreground/70">
@@ -116,23 +123,26 @@ export default function ProductsPage() {
               We’ll never make medical claims — we focus on real ingredients and
               honest labeling.
             </p>
+            </div>
           </div>
         </div>
 
-        <div className="mt-10 jjb-card bg-white/70 p-8 ring-1 ring-black/5">
+        <div className="mt-10 overflow-hidden rounded-[22px] border border-black/10 bg-jjb-surface">
           <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
             <div className="max-w-2xl">
-              <p className="font-[var(--font-display)] text-2xl tracking-tight">
+              <p className="px-8 pt-8 font-[var(--font-display)] text-2xl tracking-tight">
                 Want Jogi Jam Bars at your café or shop?
               </p>
-              <p className="mt-2 text-base leading-7 text-foreground/85 sm:text-sm sm:leading-6 sm:text-foreground/70">
+              <p className="mt-2 px-8 pb-8 text-base leading-7 text-foreground/80 sm:text-sm sm:leading-6 sm:text-foreground/70">
                 We love checkout-counter displays, sampling moments, and
                 family-friendly partnerships.
               </p>
             </div>
-            <Button href="/cafe-partners" variant="secondary">
-              Learn about partnerships
-            </Button>
+            <div className="px-8 pb-8 md:py-8">
+              <Button href="/cafe-partners" variant="secondary">
+                Learn more
+              </Button>
+            </div>
           </div>
         </div>
       </Container>
