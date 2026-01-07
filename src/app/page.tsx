@@ -15,7 +15,7 @@ export default function Home() {
               Jam‑packed with joy.
               <span className="text-jjb-berry"> Built from whole foods.</span>
             </h1>
-            <p className="mt-5 max-w-xl text-lg leading-8 text-foreground/75">
+            <p className="mt-5 max-w-xl text-lg leading-8 text-foreground/90 sm:text-foreground/75">
               Jogi Jam Bars are playfully nourishing snack bars made with dates,
               nuts, fruits, and gentle spices — the sweet, chewy treat kids love
               and parents trust.
@@ -28,7 +28,7 @@ export default function Home() {
               </Button>
             </div>
 
-            <p className="mt-6 text-sm text-foreground/60">
+            <p className="mt-6 text-sm text-foreground/75 sm:text-foreground/60">
               No heavy health lectures. Just real ingredients, made with love.
             </p>
           </div>
@@ -41,7 +41,7 @@ export default function Home() {
                   <p className="font-[var(--font-display)] text-2xl tracking-tight">
                     What’s inside?
                   </p>
-                  <p className="mt-2 text-sm leading-6 text-foreground/70">
+                  <p className="mt-2 text-base leading-7 text-foreground/85 sm:text-sm sm:leading-6 sm:text-foreground/70">
                     A short list you can pronounce — like dates, nuts/seeds,
                     fruit, and cozy spices.
                   </p>
@@ -65,25 +65,25 @@ export default function Home() {
               <div className="mt-7 grid gap-4 sm:grid-cols-2">
                 <div className="rounded-2xl bg-white/70 p-5 ring-1 ring-black/5">
                   <p className="font-semibold">Kids say “YUM.”</p>
-                  <p className="mt-1 text-sm text-foreground/70">
+                  <p className="mt-1 text-base text-foreground/85 sm:text-sm sm:text-foreground/70">
                     Familiar flavors, fun names, lunchbox‑friendly.
                   </p>
                 </div>
                 <div className="rounded-2xl bg-white/70 p-5 ring-1 ring-black/5">
                   <p className="font-semibold">Parents say “YES.”</p>
-                  <p className="mt-1 text-sm text-foreground/70">
+                  <p className="mt-1 text-base text-foreground/85 sm:text-sm sm:text-foreground/70">
                     Organic ingredients, clear labeling, no hype.
                   </p>
                 </div>
                 <div className="rounded-2xl bg-white/70 p-5 ring-1 ring-black/5">
                   <p className="font-semibold">Ayurveda‑inspired.</p>
-                  <p className="mt-1 text-sm text-foreground/70">
+                  <p className="mt-1 text-base text-foreground/85 sm:text-sm sm:text-foreground/70">
                     Gentle spices like cardamom, cinnamon, turmeric.
                   </p>
                 </div>
                 <div className="rounded-2xl bg-white/70 p-5 ring-1 ring-black/5">
                   <p className="font-semibold">Made for togetherness.</p>
-                  <p className="mt-1 text-sm text-foreground/70">
+                  <p className="mt-1 text-base text-foreground/85 sm:text-sm sm:text-foreground/70">
                     A snack that makes family moments easier (and happier).
                   </p>
                 </div>
@@ -100,7 +100,7 @@ export default function Home() {
               <p className="font-[var(--font-display)] text-3xl tracking-tight">
                 Two lines, one family vibe.
               </p>
-              <p className="mt-3 text-foreground/75">
+              <p className="mt-3 text-foreground/85 sm:text-foreground/75">
                 Kid‑friendly favorites for little adventurers, plus bolder,
                 spice‑kissed bars for grown‑ups (and hungry teens).
               </p>
@@ -115,7 +115,7 @@ export default function Home() {
             <div className="grid gap-4 sm:grid-cols-2">
               <div className="rounded-3xl bg-[linear-gradient(135deg,rgba(246,195,67,0.35),rgba(56,189,248,0.18))] p-6 ring-1 ring-black/5">
                 <p className="font-[var(--font-display)] text-xl">Kids Line</p>
-                <p className="mt-2 text-sm text-foreground/70">
+                <p className="mt-2 text-base text-foreground/85 sm:text-sm sm:text-foreground/70">
                   Smaller, playful, lunchbox‑ready.
                 </p>
                 <div className="mt-4 overflow-hidden rounded-2xl bg-white/70 ring-1 ring-black/5">
@@ -136,7 +136,7 @@ export default function Home() {
               </div>
               <div className="rounded-3xl bg-[linear-gradient(135deg,rgba(46,125,50,0.20),rgba(216,27,96,0.18))] p-6 ring-1 ring-black/5">
                 <p className="font-[var(--font-display)] text-xl">Family Line</p>
-                <p className="mt-2 text-sm text-foreground/70">
+                <p className="mt-2 text-base text-foreground/85 sm:text-sm sm:text-foreground/70">
                   Heartier bars with grown‑up flavor twists.
                 </p>
                 <div className="mt-4 overflow-hidden rounded-2xl bg-white/70 ring-1 ring-black/5">
@@ -162,7 +162,7 @@ export default function Home() {
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           <div className="jjb-card bg-white/70 p-7 ring-1 ring-black/5">
             <p className="font-[var(--font-display)] text-xl">Real ingredients</p>
-            <p className="mt-2 text-sm leading-6 text-foreground/70">
+            <p className="mt-2 text-base leading-7 text-foreground/85 sm:text-sm sm:leading-6 sm:text-foreground/70">
               Dates for natural sweetness, plus nuts/seeds, fruits, and gentle
               spices. Nothing “weird.”
             </p>
@@ -171,7 +171,7 @@ export default function Home() {
             <p className="font-[var(--font-display)] text-xl">
               Playfully trustworthy
             </p>
-            <p className="mt-2 text-sm leading-6 text-foreground/70">
+            <p className="mt-2 text-base leading-7 text-foreground/85 sm:text-sm sm:leading-6 sm:text-foreground/70">
               Bright, joyful branding — backed by transparent, parent‑friendly
               labeling.
             </p>
@@ -180,7 +180,7 @@ export default function Home() {
             <p className="font-[var(--font-display)] text-xl">
               Inspired by Ayurveda
             </p>
-            <p className="mt-2 text-sm leading-6 text-foreground/70">
+            <p className="mt-2 text-base leading-7 text-foreground/85 sm:text-sm sm:leading-6 sm:text-foreground/70">
               Ancient wisdom, modern snacks. We keep it light, inclusive, and
               delicious.
             </p>

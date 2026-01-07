@@ -25,13 +25,13 @@ export default function OurStoryPage() {
             <p className="font-[var(--font-display)] text-2xl tracking-tight">
               Family joy, first.
             </p>
-            <p className="mt-3 text-sm leading-7 text-foreground/75">
+            <p className="mt-3 text-base leading-7 text-foreground/85 sm:text-sm sm:text-foreground/75">
               Our founder started making date-based bars at home for his son,
               Jogindra — lovingly nicknamed “Jogi.” The goal was simple: a snack
               that could bring smiles to busy days, without the “what even is
               that?” ingredient list.
             </p>
-            <p className="mt-4 text-sm leading-7 text-foreground/75">
+            <p className="mt-4 text-base leading-7 text-foreground/85 sm:text-sm sm:text-foreground/75">
               That’s still our north star today. We keep the vibe warm and
               playful, the ingredients honest, and the experience family-first.
             </p>
@@ -41,11 +41,11 @@ export default function OurStoryPage() {
             <p className="font-[var(--font-display)] text-2xl tracking-tight">
               Playfully nourishing.
             </p>
-            <p className="mt-3 text-sm leading-7 text-foreground/75">
+            <p className="mt-3 text-base leading-7 text-foreground/85 sm:text-sm sm:text-foreground/75">
               We’re inspired by Ayurveda’s love of balance and whole ingredients
               — but we talk about it like a friend, not a textbook.
             </p>
-            <p className="mt-4 text-xs text-foreground/60">
+            <p className="mt-4 text-sm text-foreground/75 sm:text-xs sm:text-foreground/60">
               We don’t make medical claims. We just make really good snack bars.
             </p>
             <div className="mt-6 overflow-hidden rounded-3xl bg-white/70 ring-1 ring-black/5">
@@ -66,7 +66,7 @@ export default function OurStoryPage() {
               <p className="font-[var(--font-display)] text-3xl tracking-tight">
                 Our promise
               </p>
-              <ul className="mt-5 space-y-3 text-sm leading-7 text-foreground/75">
+              <ul className="mt-5 space-y-3 text-base leading-7 text-foreground/85 sm:text-sm sm:text-foreground/75">
                 <li>
                   <span className="font-semibold text-foreground">
                     Real ingredients:
@@ -91,11 +91,11 @@ export default function OurStoryPage() {
               <p className="font-[var(--font-display)] text-2xl tracking-tight">
                 A tiny “Ayurvedic fun fact”
               </p>
-              <p className="mt-3 text-sm leading-7 text-foreground/75">
+              <p className="mt-3 text-base leading-7 text-foreground/85 sm:text-sm sm:text-foreground/75">
                 Cardamom is a beloved spice in many Indian sweets and chai — warm
                 and aromatic. We like to call it “grandma’s cozy spice.”
               </p>
-              <p className="mt-4 text-xs text-foreground/60">
+              <p className="mt-4 text-sm text-foreground/75 sm:text-xs sm:text-foreground/60">
                 (Fun fact only. Not medical advice.)
               </p>
             </div>

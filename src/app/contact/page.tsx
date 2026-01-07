@@ -24,7 +24,7 @@ export default function ContactPage() {
             <p className="font-[var(--font-display)] text-2xl tracking-tight">
               Email us
             </p>
-            <p className="mt-2 text-sm leading-7 text-foreground/75">
+            <p className="mt-2 text-base leading-7 text-foreground/85 sm:text-sm sm:text-foreground/75">
               The fastest way to reach us:
             </p>
             <p className="mt-4">
@@ -38,7 +38,7 @@ export default function ContactPage() {
 
             <div className="mt-8 rounded-3xl bg-white/70 p-6 ring-1 ring-black/5">
               <p className="font-semibold">Wholesale / cafés</p>
-              <p className="mt-1 text-sm leading-6 text-foreground/70">
+              <p className="mt-1 text-base leading-7 text-foreground/85 sm:text-sm sm:leading-6 sm:text-foreground/70">
                 Include your shop name, location, and approximate weekly volume.
                 We’ll follow up with next steps.
               </p>
@@ -54,11 +54,11 @@ export default function ContactPage() {
             <p className="font-[var(--font-display)] text-2xl tracking-tight">
               “Jam” updates
             </p>
-            <p className="mt-3 text-sm leading-7 text-foreground/75">
+            <p className="mt-3 text-base leading-7 text-foreground/85 sm:text-sm sm:text-foreground/75">
               Want first dibs on new flavors, pop-ups, and partner cafés?
             </p>
             <form className="mt-5 space-y-3">
-              <label className="block text-xs font-semibold text-foreground/70">
+              <label className="block text-sm font-semibold text-foreground/85 sm:text-xs sm:text-foreground/70">
                 Email
                 <input
                   type="email"
@@ -72,7 +72,7 @@ export default function ContactPage() {
               >
                 Join the Jam (coming soon)
               </button>
-              <p className="text-xs text-foreground/60">
+              <p className="text-sm text-foreground/75 sm:text-xs sm:text-foreground/60">
                 No spam. Just snack-time joy.
               </p>
             </form>

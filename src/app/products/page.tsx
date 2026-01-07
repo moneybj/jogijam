@@ -28,7 +28,7 @@ export default function ProductsPage() {
             <h2 className="mt-4 font-[var(--font-display)] text-2xl tracking-tight">
               Little bars. Big smiles.
             </h2>
-            <p className="mt-2 text-sm leading-6 text-foreground/70">
+            <p className="mt-2 text-base leading-7 text-foreground/85 sm:text-sm sm:leading-6 sm:text-foreground/70">
               Smaller portions, familiar flavors, and fun names. Built for
               lunchboxes, after-school, and “one more bite!”
             </p>
@@ -58,12 +58,14 @@ export default function ProductsPage() {
                   className="rounded-2xl bg-white/70 p-4 ring-1 ring-black/5"
                 >
                   <p className="font-semibold">{f.name}</p>
-                  <p className="mt-1 text-xs text-foreground/70">{f.note}</p>
+                  <p className="mt-1 text-sm text-foreground/80 sm:text-xs sm:text-foreground/70">
+                    {f.note}
+                  </p>
                 </div>
               ))}
             </div>
 
-            <p className="mt-6 text-xs text-foreground/60">
+            <p className="mt-6 text-sm text-foreground/75 sm:text-xs sm:text-foreground/60">
               Note: final recipes, allergens, and nutrition facts will be listed
               clearly per flavor.
             </p>
@@ -76,7 +78,7 @@ export default function ProductsPage() {
             <h2 className="mt-4 font-[var(--font-display)] text-2xl tracking-tight">
               A little bolder. Still joyful.
             </h2>
-            <p className="mt-2 text-sm leading-6 text-foreground/70">
+            <p className="mt-2 text-base leading-7 text-foreground/85 sm:text-sm sm:leading-6 sm:text-foreground/70">
               Heartier bars with adventurous flavor notes — inspired by cozy
               spices and Ayurvedic traditions (in a friendly, no-lectures way).
             </p>
@@ -103,12 +105,14 @@ export default function ProductsPage() {
                   className="rounded-2xl bg-white/70 p-4 ring-1 ring-black/5"
                 >
                   <p className="font-semibold">{f.name}</p>
-                  <p className="mt-1 text-xs text-foreground/70">{f.note}</p>
+                  <p className="mt-1 text-sm text-foreground/80 sm:text-xs sm:text-foreground/70">
+                    {f.note}
+                  </p>
                 </div>
               ))}
             </div>
 
-            <p className="mt-6 text-xs text-foreground/60">
+            <p className="mt-6 text-sm text-foreground/75 sm:text-xs sm:text-foreground/60">
               We’ll never make medical claims — we focus on real ingredients and
               honest labeling.
             </p>
@@ -121,7 +125,7 @@ export default function ProductsPage() {
               <p className="font-[var(--font-display)] text-2xl tracking-tight">
                 Want Jogi Jam Bars at your café or shop?
               </p>
-              <p className="mt-2 text-sm leading-6 text-foreground/70">
+              <p className="mt-2 text-base leading-7 text-foreground/85 sm:text-sm sm:leading-6 sm:text-foreground/70">
                 We love checkout-counter displays, sampling moments, and
                 family-friendly partnerships.
               </p>

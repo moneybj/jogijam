@@ -59,7 +59,9 @@ export default function FaqPage() {
                   </span>
                 </span>
               </summary>
-              <p className="mt-3 text-sm leading-7 text-foreground/75">{f.a}</p>
+              <p className="mt-3 text-base leading-7 text-foreground/85 sm:text-sm sm:text-foreground/75">
+                {f.a}
+              </p>
             </details>
           ))}
         </div>

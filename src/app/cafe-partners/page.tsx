@@ -24,7 +24,7 @@ export default function CafePartnersPage() {
             <p className="font-[var(--font-display)] text-2xl tracking-tight">
               How we show up in your shop
             </p>
-            <ul className="mt-5 space-y-4 text-sm leading-7 text-foreground/75">
+            <ul className="mt-5 space-y-4 text-base leading-7 text-foreground/85 sm:text-sm sm:text-foreground/75">
               <li>
                 <span className="font-semibold text-foreground">
                   Checkout display:
@@ -56,7 +56,7 @@ export default function CafePartnersPage() {
             <p className="font-[var(--font-display)] text-2xl tracking-tight">
               Quick pitch
             </p>
-            <p className="mt-3 text-sm leading-7 text-foreground/75">
+            <p className="mt-3 text-base leading-7 text-foreground/85 sm:text-sm sm:text-foreground/75">
               “A joyfully branded, whole-food snack bar — sweetened with dates,
               inspired by Ayurveda, and easy to love.”
             </p>
@@ -73,7 +73,7 @@ export default function CafePartnersPage() {
           <p className="font-[var(--font-display)] text-2xl tracking-tight">
             Want a co-branded promo?
           </p>
-          <p className="mt-2 text-sm leading-7 text-foreground/75">
+          <p className="mt-2 text-base leading-7 text-foreground/85 sm:text-sm sm:text-foreground/75">
             We can support with table tents, chalkboard-style signage, loyalty
             rewards, and social shoutouts — keeping the message warm, honest,
             and fun.
