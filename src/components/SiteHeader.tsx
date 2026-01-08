@@ -5,6 +5,7 @@ import { Button } from "@/components/Button";
 
 const nav = [
   { href: "/products", label: "Products" },
+  { href: "/shop", label: "Shop" },
   { href: "/subscribe", label: "Subscribe" },
   { href: "/our-story", label: "Our Story" },
   { href: "/cafe-partners", label: "Café Partners" },
@@ -33,7 +34,7 @@ export function SiteHeader() {
           <Button href="/contact" variant="secondary" className="hidden sm:flex">
             Contact
           </Button>
-          <Button href="/products">Shop</Button>
+          <Button href="/shop">Shop</Button>
         </div>
       </Container>
     </header>
