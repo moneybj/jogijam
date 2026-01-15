@@ -18,6 +18,18 @@ Set these environment variables locally and in Vercel:
 - `SHOPIFY_STOREFRONT_ACCESS_TOKEN` (starts with `shpat_...` or similar)
 - `SHOPIFY_STOREFRONT_API_VERSION` (optional, default: `2025-01`)
 
+## Optional: protect the internal dashboard
+
+If you want to password-protect `/dashboard`, set:
+
+- `DASHBOARD_BASIC_AUTH` in the format `user:password`
+
+Example:
+
+```bash
+DASHBOARD_BASIC_AUTH=admin:change-me
+```
+
 ### Local dev (example)
 
 Create a `.env.local` file (not committed) in the project root:
